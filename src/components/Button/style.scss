@@ -1,0 +1,58 @@
+$white: #FFFFFF;
+$red: #FF0202;
+$black: #1A1A1A;
+$blackHover: #212121;
+$blackClick: #424242;
+$gray: #E5E5E5;
+$grayHover: #F8F6F6;
+$hover-gray: #DADADA;
+$dark-gray: #8d8d8d;
+
+.button{
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  border-radius: 0.6em;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  
+  
+  &__secondary{
+    border: 2px solid blueviolet;
+    color: blueviolet;
+    &:hover{
+      background-color: blueviolet;
+      color: #fff;
+      box-shadow: 0 0 40px 40px bluevioletu inset;
+    }
+  }
+  &__danger{
+    border: 2px solid $red;
+    color: $red;
+    &:hover{
+      background-color: #cc0f32;
+      color: #fff;
+      box-shadow: 0 0 40px 40px red inset;
+    } 
+  }
+  &__primary{
+    border:2px solid $black;
+    color: $black;
+    &:hover{
+      background-color: $black !important;
+      color: #fff !important;
+    }
+  }
+}
